@@ -1,0 +1,31 @@
+{
+  "name": "quizquake-brainstorm-arena",
+  "version": "1.0.0",
+  "description": "Computerized Adaptive Testing (CAT) & Diagnostic Assessment Platform",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "install:all": "npm --prefix server install && npm --prefix client install",
+    "build": "npm --prefix client install && npm --prefix client run build && npm --prefix server install && npm --prefix server run build",
+    "start": "node server/dist/index.js",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev"
+  },
+  "keywords": [
+    "adaptive-testing",
+    "irt",
+    "react",
+    "express",
+    "chartjs",
+    "radar-chart",
+    "hackathon",
+    "quizquake",
+    "cloud-hosting"
+  ],
+  "author": "Antigravity Pair Programmer",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}
